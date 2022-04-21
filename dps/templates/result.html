@@ -1,0 +1,17 @@
+<html style="background-color:#f996c6" >
+<h1>the results are here </h1>
+<h3>the data you entered is: {{lis}}</h3>
+<h2>your stress level category is {{ans}}</h2>
+<pre>
+   ---level 0: low/normal
+   ---level 1: medium low 
+   ---level 2: medium 
+   ---level 3: medium high 
+   ---level 4: high
+</pre>
+<a href="{% url 'home' %}">BACK</a>
+<h2>
+  encryption: {{encrypted_msg}}
+   decryption: {{decrypted_msg}}
+</h2>
+</html>

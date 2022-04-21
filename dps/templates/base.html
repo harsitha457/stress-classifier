@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>home</title>
+</head>
+<body bgcolor="pink">
+{% block content %}
+<form action="{% url 'home' %}" method="POST">
+    {% csrf_token %}
+    NAME: <input type="text" required name="name"> <br><br>
+    EMAILID: <input type="text" required name="email"> <br><br>
+    CITY: <input type="text" required name="city"> <br><br>
+<input class="btn btn-primary" type="submit" name="" color="green" value="PROCEED" ></div>
+</form>
+{% endblock %}
+</body>
+</html>

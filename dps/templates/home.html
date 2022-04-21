@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>form</title>
+</head>
+<h2>CHECK YOUR STRESS LEVEL </h2>
+    
+
+    <br>
+   <body bgcolor="pink">
+       <div class="container">
+       <h1> STRESS CLASSIFICATION </h1>
+       <h3>FILL In The Fields</h3>
+     
+    <form action="{% url 'result' %}">
+        {% csrf_token %}
+        snoringRate:      <input type="text" required name="sr"> <br><br>
+        respirationRate:  <input type="text" required name="rr"> <br><br>
+        bodyTemperature:  <input type="text" required name="t"> <br><br>
+        limbMovement:     <input type="text" required name="lm"> <br><br>
+        bloodoxygenlevel: <input type="text" required name="bo"> <br><br>
+        rapideyemovement: <input type="text" required name="rem"> <br><br>
+        hoursofsleep:     <input type="text" required name="sr.1"> <br><br>
+        heartRate:        <input type="text" required name="hr"> <br><br>
+
+
+
+ 
+ <input type="submit" class="btn btn-primary" name="" value="Submit" color="green" ></div>
+
+</form>
+</div>
+   </body>
+   
+<br>
+</html>
